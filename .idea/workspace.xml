@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26f67c0f-cb35-4064-839f-7e44188eaa83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adopter-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shelter-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cs157a/petadoption/dao/AdopterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cs157a/petadoption/dao/AdopterDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cs157a/petadoption/dao/ShelterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cs157a/petadoption/dao/ShelterDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cs157a/petadoption/servlet/AdopterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cs157a/petadoption/servlet/AdopterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cs157a/petadoption/servlet/ShelterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cs157a/petadoption/servlet/ShelterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adopters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adopters.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shelters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shelters.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cs157a/petadoption/dao/AdopterDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cs157a/petadoption/dao/AdopterDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cs157a/petadoption/dao/ShelterDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cs157a/petadoption/dao/ShelterDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cs157a/petadoption/servlet/AdopterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cs157a/petadoption/servlet/AdopterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cs157a/petadoption/servlet/ShelterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cs157a/petadoption/servlet/ShelterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pet-adoption-system.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/pet-adoption-system.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pet-adoption-system/WEB-INF/classes/com/cs157a/petadoption/dao/AdopterDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/pet-adoption-system/WEB-INF/classes/com/cs157a/petadoption/dao/AdopterDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pet-adoption-system/WEB-INF/classes/com/cs157a/petadoption/servlet/AdopterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/pet-adoption-system/WEB-INF/classes/com/cs157a/petadoption/servlet/AdopterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pet-adoption-system/WEB-INF/views/adopters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/pet-adoption-system/WEB-INF/views/adopters.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,21 +34,21 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3D0LwftdE1nppLCPVIxZfzcpJqc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="cs157" />

@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>Shelters</title>
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/css/styles.css?v=20">
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/css/styles.css?v=24">
 </head>
 <body>
 
@@ -22,16 +22,21 @@
 </div>
 
 <div class="container">
+
     <div class="toolbar">
         <div>
             <h1>Shelters</h1>
-            <p class="lead">View shelter contact information</p>
+            <p class="lead">View and manage shelter information</p>
+        </div>
+
+        <div class="actions">
+            <a class="button" href="<%= request.getContextPath() %>/shelters?action=new">Add Shelter</a>
         </div>
     </div>
 
     <div class="search-card">
         <form class="search-form" method="get" action="<%= request.getContextPath() %>/shelters">
-            <input type="text" name="search" placeholder="Search shelters by name, location, or email">
+            <input type="text" name="search" value="${search}" placeholder="Search shelters by name, location, or email">
             <button type="submit">Search</button>
             <a class="button secondary" href="<%= request.getContextPath() %>/shelters">Clear</a>
         </form>
@@ -48,6 +53,7 @@
                 <th>Email</th>
             </tr>
             </thead>
+
             <tbody>
             <c:forEach var="shelter" items="${shelters}">
                 <tr>
@@ -58,9 +64,16 @@
                     <td>${shelter.email}</td>
                 </tr>
             </c:forEach>
+
+            <c:if test="${empty shelters}">
+                <tr>
+                    <td colspan="5" style="text-align:center;">No shelters found.</td>
+                </tr>
+            </c:if>
             </tbody>
         </table>
     </div>
+
 </div>
 
 </body>

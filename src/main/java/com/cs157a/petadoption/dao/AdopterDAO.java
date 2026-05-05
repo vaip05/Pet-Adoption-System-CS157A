@@ -76,4 +76,21 @@ public class AdopterDAO {
         adopter.setEmail(rs.getString("email"));
         return adopter;
     }
+
+    public void insert(Adopter adopter) {
+        String sql = "INSERT INTO adopters (full_name, address, phone_number, email) VALUES (?, ?, ?, ?)";
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            stmt.setString(1, adopter.getFullName());
+            stmt.setString(2, adopter.getAddress());
+            stmt.setString(3, adopter.getPhoneNumber());
+            stmt.setString(4, adopter.getEmail());
+            stmt.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new RuntimeException("Error inserting adopter.", e);
+        }
+    }
 }

@@ -49,6 +49,23 @@ public class ShelterDAO {
         return shelters;
     }
 
+    public void insert(Shelter shelter) {
+        String sql = "INSERT INTO shelters (shelter_name, location, contact_number, email) VALUES (?, ?, ?, ?)";
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            stmt.setString(1, shelter.getShelterName());
+            stmt.setString(2, shelter.getLocation());
+            stmt.setString(3, shelter.getContactNumber());
+            stmt.setString(4, shelter.getEmail());
+            stmt.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new RuntimeException("Error inserting shelter.", e);
+        }
+    }
+
     private List<Shelter> runQuery(String sql) {
         List<Shelter> shelters = new ArrayList<>();
 
