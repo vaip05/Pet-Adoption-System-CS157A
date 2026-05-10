@@ -6,8 +6,8 @@ Java web application that implements a three-tier architecture using:
 - Data layer: MySQL
 
 ## Project Structure
-- `sql/schema.sql` - database creation and table definitions
-- `sql/seed.sql` - sample data (15 rows per table)
+- `sql/create_schema.sql` - database creation and table definitions
+- `sql/initialize_data.sql` - sample data (15 rows per table)
 - `src/main/java/.../model` - Java model classes
 - `src/main/java/.../dao` - JDBC data access classes
 - `src/main/java/.../servlet` - controllers / application logic
@@ -32,17 +32,24 @@ Java web application that implements a three-tier architecture using:
 - Display adopter list
 
 ## How to Run
-### 1. Create the MySQL database
+
+### 1. Create and initialize the MySQL database
 Run these scripts in MySQL in order:
-1. `sql/schema.sql`
-2. `sql/seed.sql`
+
+1. `sql/create_schema.sql`
+2. `sql/initialize_data.sql`
 
 ### 2. Update database credentials
 Edit:
+
 `src/main/resources/db.properties`
 
-Set your MySQL username and password.
+Set your MySQL username and password:
 
+```properties
+db.url=jdbc:mysql://localhost:3306/pet_adoption
+db.username=root
+db.password=your_password
 ### 3. Build the project
 Using Maven:
 ```bash
@@ -72,9 +79,6 @@ http://localhost:8080/pet-adoption-system/
 - Uses foreign keys and constraints
 - Follows three-tier architecture
 
-## Suggested Next Improvements
+## Future Improvements
 - Add login roles for shelter staff vs adopter users
-- Add validation messages and error pages
 - Auto-mark pet status as pending after application submission
-- Add search by breed, age, or shelter
-- Add screenshots and ER diagram to final report
