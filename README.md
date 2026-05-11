@@ -56,19 +56,64 @@ Using Maven:
 mvn clean package
 ```
 
-### 4. Deploy the WAR file
-Deploy the generated WAR file to Apache Tomcat 10+.
+### 3.Build the project
+Using Maven;
+`mvn clean package`
 
-Generated file:
+### 4. Apache Tomcat Setup
+
+This project requires Apache Tomcat 10 or later to run.
+
+### Download Tomcat
+Download Apache Tomcat from:  
+https://tomcat.apache.org/
+
+Extract the folder to a location on your computer.
+
+
+### Deploy the Application
+After building the project using Maven:
+
+```bash
+mvn clean package
+```
+
+Copy the generated WAR file:
+
 ```text
 target/pet-adoption-system.war
 ```
 
-### 5. Open the app
-After deployment, visit:
+into the Tomcat `webapps` directory:
+
+```text
+apache-tomcat-10.x.x/webapps/
+```
+
+---
+
+### Start Tomcat
+
+Navigate to the Tomcat `bin` folder and run:
+
+**Mac/Linux:**
+```bash
+./startup.sh
+```
+
+**Windows:**
+```cmd
+startup.bat
+```
+
+### 4. Access the Application
+
+Open your browser and go to:
+
 ```text
 http://localhost:8080/pet-adoption-system/
 ```
+
 
 ## Mapping to Project Requirements
 - Uses Java and JDBC directly
