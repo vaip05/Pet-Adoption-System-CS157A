@@ -50,17 +50,9 @@ Set your MySQL username and password:
 db.url=jdbc:mysql://localhost:3306/pet_adoption
 db.username=root
 db.password=your_password
-### 3. Build the project
-Using Maven:
-```bash
-mvn clean package
 ```
 
-### 3.Build the project
-Using Maven;
-`mvn clean package`
-
-### 4. Apache Tomcat Setup
+### 3. Apache Tomcat Setup
 
 This project requires Apache Tomcat 10 or later to run.
 
